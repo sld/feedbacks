@@ -1,0 +1,12 @@
+$("#feedback-form").html("<%= escape_javascript( render :partial => 'feedback_form', :object => @feedback ) %>");
+
+$("#feedback-form").dialog({
+  modal: true,
+  buttons:  {
+    "Отправить": function(){
+      $("#feedback-form").children().submit();
+    },
+    "Отмена": function() { $( this ).dialog( "close" ); }
+  },
+  close:  function() { }
+});

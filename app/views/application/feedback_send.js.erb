@@ -1,0 +1,5 @@
+<% if @feedback.errors.any? %>
+    $("#feedback-form").prepend("<%=escape_javascript( render :partial => 'shared/error_messages', :locals => {:target => @feedback} ) %>")
+<% else %>
+    $("#feedback-form").dialog("close");
+<% end %>
