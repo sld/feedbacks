@@ -1,7 +1,7 @@
 module Feedbacks
   class FeedbackMailer < ActionMailer::Base
-    default from: "feedback@rbcpp.ru",
-            :to => "sld7703@gmail.com"
+    default from: Feedbacks.from_email,
+            :to => Feedbacks.to_email
 
 
     def feedback_email(feedback)

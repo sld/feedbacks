@@ -1,10 +1,10 @@
 = form_for feedback_form, :url => feedback_send_path, :remote => true do |f|
   = f.label :topic
   = f.text_field :topic, :class => "text ui-widget-content ui-corner-all"
-  = f.label :text
-  = f.text_area :text, :required => true, :class => "text ui-widget-content ui-corner-all"
-  = f.label :email
-  = f.text_field :email,  :required => true, :class => "text ui-widget-content ui-corner-all"
+  = f.label :text, :class => 'required'
+  = f.text_area :text, :class => "text ui-widget-content ui-corner-all"
+  = f.label :email, :class => 'required'
+  = f.text_field :email, :class => "text ui-widget-content ui-corner-all"
   = f.hidden_field :url, :class => "text ui-widget-content ui-corner-all"
 
 -# Устанавливаем текущий url в поле формы( request.url выдаст feedback_send, а нужен тот который на адресной строке
