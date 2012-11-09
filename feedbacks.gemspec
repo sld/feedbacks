@@ -7,11 +7,12 @@ require "feedbacks/version"
 Gem::Specification.new do |s|
   s.name        = "feedbacks"
   s.version     = Feedbacks::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["7700"]
+  s.email       = ["sld7700@gmail.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Feedbacks."
-  s.description = "TODO: Description of Feedbacks."
+  s.summary     = "Feedbacks engine"
+  s.description = "This engine contains all you need to add feedback functionality to your app.
+                   Like ajax modal window."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
