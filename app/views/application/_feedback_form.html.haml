@@ -1,6 +1,7 @@
 = form_for feedback_form, :url => feedback_send_path, :remote => true do |f|
   = f.label :topic
   = f.text_field :topic, :class => "text ui-widget-content ui-corner-all"
+  %br
   = f.label :text, :class => 'required'
   = f.text_area :text, :class => "text ui-widget-content ui-corner-all"
   = f.label :email, :class => 'required'
