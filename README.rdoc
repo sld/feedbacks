@@ -1,5 +1,8 @@
 = Feedbacks
 
-http://clients.malgini.com/projects/tpp/wiki/Feedbacks
+Gem add feedbacks support.
+It looks like dialog window.
+
+Under development.
 
 This project rocks and uses MIT-LICENSE.
