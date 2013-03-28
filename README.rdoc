@@ -5,4 +5,6 @@ It looks like dialog window.
 
 Under development.
 
+Using at http://www.rbcitynews.ru/
+
 This project rocks and uses MIT-LICENSE.
