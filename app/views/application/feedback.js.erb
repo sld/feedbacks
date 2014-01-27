@@ -2,6 +2,8 @@ $("#feedback-form").html("<%= escape_javascript( render :partial => 'feedback_fo
 
 $("#feedback-form").dialog({
   modal: true,
+  width: 300,
+  height: 550,
   buttons:  {
     "Отправить": function(){
       $("#feedback-form").children().submit();
