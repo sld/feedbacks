@@ -1,0 +1,8 @@
+source "http://rubygems.org"
+
+gem 'feedbacks', path: '../../'
+gem 'rails', '~> 3.2.0'
+gem 'sqlite3'
+
+gem "jquery-rails"
+gem "jquery-ui-rails", :group => :assets

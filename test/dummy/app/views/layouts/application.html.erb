@@ -10,5 +10,9 @@
 
 <%= yield %>
 
+<div id='feedback-form' title='Сообщение' >
+  <%= link_to "Обратная связь", feedbacks.feedback_path, :remote => true, :class => 'feedback' %>
+</div>
+
 </body>
 </html>

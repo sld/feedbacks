@@ -1,0 +1,12 @@
+ru:
+  activerecord:
+    attributes:
+      feedbacks/feedback:
+        topic: 'Тема'
+        text: 'Текст'
+        created_at: 'Время создания'
+        url: 'Url с которой был отправлен'
+        email: 'Email'
+  feedbacks:
+    submit: 'Отправить'
+    cancel: 'Отмена'
