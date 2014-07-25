@@ -9,10 +9,10 @@ Gem::Specification.new do |s|
   s.version     = Feedbacks::VERSION
   s.authors     = ["7700"]
   s.email       = ["sld7700@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/sld/feedbacks"
   s.summary     = "Feedbacks engine"
-  s.description = "This engine contains all you need to add feedback functionality to your app.
-                   Like ajax modal window."
+  s.description = "Contact us jquery-ui dialog window. Feedback is saving in the database
+                   and sends to your email."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

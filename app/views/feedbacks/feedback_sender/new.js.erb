@@ -1,0 +1,14 @@
+$("#feedback-form").html("<%= escape_javascript(render :partial => 'feedback_form', :object => @feedback) %>");
+
+$("#feedback-form").dialog({
+  modal: true,
+  width: 300,
+  height: 550,
+  buttons:  {
+    "<%= escape_javascript(I18n.t('feedbacks.submit'))%>": function(){
+      $("#feedback-form").children().submit();
+    },
+    "<%= escape_javascript(I18n.t('feedbacks.cancel'))%>": function() { $( this ).dialog( "close" ); }
+  },
+  close:  function() { }
+});

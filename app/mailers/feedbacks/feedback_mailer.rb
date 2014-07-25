@@ -1,6 +1,6 @@
 module Feedbacks
   class FeedbackMailer < ActionMailer::Base
-    default from: Feedbacks.from_email,
+    default :from => Feedbacks.from_email,
             :to => Feedbacks.to_email
 
 
@@ -8,5 +8,6 @@ module Feedbacks
       @feedback = feedback
       mail :subject => feedback.topic
     end
+
   end
 end

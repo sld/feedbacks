@@ -1,0 +1,27 @@
+<% if @feedback.email %>
+  <p>
+    <strong><%= I18n.t('activerecord.attributes.feedbacks/feedback.email') %></strong>
+    <%= @feedback.email %>
+  </p>
+<% end %>
+
+<p>
+  <strong> <%= I18n.t('activerecord.attributes.feedbacks/feedback.created_at') %> </strong>
+  <%= @feedback.created_at.strftime "%d %B %Y, %A %H:%M" %>
+</p>
+
+<p>
+  <b> <%= I18n.t('activerecord.attributes.feedbacks/feedback.url') %></b>
+  <%= link_to @feedback.url, @feedback.url %>
+</p>
+
+<p>
+  <b> <%= I18n.t('activerecord.attributes.feedbacks/feedback.topic') %></b>
+  <%= @feedback.topic %>
+</p>
+
+<p>
+  <b><%= I18n.t('activerecord.attributes.feedbacks/feedback.text') %></b>
+  <br />
+  <%= @feedback.text %>
+</p>
