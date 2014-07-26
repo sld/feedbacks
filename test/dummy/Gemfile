@@ -6,3 +6,9 @@ gem 'sqlite3'
 
 gem "jquery-rails"
 gem "jquery-ui-rails", :group => :assets
+
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end

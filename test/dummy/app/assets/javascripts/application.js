@@ -12,5 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui/dialog
+//= require feedbacks/application
 //= require_tree .

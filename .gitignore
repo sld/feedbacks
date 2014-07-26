@@ -5,5 +5,6 @@ test/dummy/db/*.sqlite3
 test/dummy/log/*.log
 test/dummy/tmp/
 test/dummy/.sass-cache
-config/initializers/feedbacks.rb
-config/initializers/setup_mail.rb
+test/dummy/config/initializers/feedbacks.rb
+test/dummy/config/initializers/setup_mail.rb
+test/dummy/db/*.db
