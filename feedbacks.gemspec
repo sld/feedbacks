@@ -7,10 +7,10 @@ require "feedbacks/version"
 Gem::Specification.new do |s|
   s.name        = "feedbacks"
   s.version     = Feedbacks::VERSION
-  s.authors     = ["7700"]
+  s.authors     = ["sld7700"]
   s.email       = ["sld7700@gmail.com"]
   s.homepage    = "https://github.com/sld/feedbacks"
-  s.summary     = "Feedbacks engine"
+  s.summary     = "Feedbacks engine for rails"
   s.description = "Contact us jquery-ui dialog window. Feedback is saving in the database
                    and sends to your email."
 
