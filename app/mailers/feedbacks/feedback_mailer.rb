@@ -8,6 +8,5 @@ module Feedbacks
       @feedback = feedback
       mail :subject => feedback.topic
     end
-
   end
 end

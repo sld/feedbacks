@@ -1,6 +1,5 @@
 module Feedbacks
   class FeedbackSenderController < ApplicationController
-
     def new
       @feedback = Feedback.new(:topic => params[:topic])
       respond_to do |format|
@@ -14,6 +13,5 @@ module Feedbacks
         format.js
       end
     end
-
   end
 end

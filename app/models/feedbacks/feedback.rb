@@ -16,6 +16,5 @@ module Feedbacks
     def send_email
       FeedbackMailer.feedback_email(self).deliver
     end
-
   end
 end
