@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    attributes:
+      feedbacks/feedback:
+        topic: 'Topic'
+        text: 'Text'
+        created_at: 'Created at'
+        url: 'Url'
+        email: 'Email'
+  feedbacks:
+    submit: 'Submit'
+    cancel: 'Cancel'

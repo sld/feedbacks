@@ -3,23 +3,42 @@
 Gem adds the contact us dialog window to your Rails application.
 Gem uses jquery-ui/dialog to work.
 
+Engine tested on rails 3.2.
+
 How to use it:
 
-1. Add to Gemfile: gem 'feedbacks'
+1. Add to Gemfile:
+
+    gem 'feedbacks'
+
 2. Setup ActionMailer::Base.smtp_settings
-3. Run: rails generate feedbacks:initializer and change in generated
-   initializers/feedbacks.rb :from and :to emails
-4. Run: rake feedbacks:install:migrations && rake db:migrate
-5. Add to routes: mount Feedbacks::Engine => "/feedbacks"
+3. Run and change in generated initializers/feedbacks.rb :from and :to emails:
+
+    rails generate feedbacks:initializer
+
+4. Run:
+
+    rake feedbacks:install:migrations && rake db:migrate
+
+5. Add to config/routes.rb:
+
+    mount Feedbacks::Engine => "/feedbacks"
+
 6. Add to view where you need feedback form:
 
     <div id='feedback-form' title='Feedback form title' >
       <%= link_to "Contact us", feedbacks.new_feedback_sender_path, :remote => true, :class => 'feedback' %>
     </div>
 
-7. Feedback saves in feedbacks_feedbacks table in database and then sends to your :to email.
-8. Add to application.js and application.css: require feedbacks/application
+7. Add to application.js and application.css:
 
+    require feedbacks/application
+
+8. Thats all. Feedback saves in feedbacks_feedbacks table in database and then sends to your :to email.
+
+Tests are placed in test/dummy.
+
+To try this engine goto test/dummy and enjoy it in the localhost by running rails server.
 
 Using at http://www.rbcitynews.ru/
 
